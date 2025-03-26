@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quân Đội Nhân Dân Việt Nam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background-color: #D3D3D3; text-align: center; }
+        .header { background: linear-gradient(135deg, #0073e6, #003366); padding: 20px; color: white; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); }
+        .banner { font-size: 30px; font-weight: bold; }
+        .slogan { font-size: 18px; margin-top: 5px; font-style: italic; }
+        .content { background-color: #f89c5a; padding: 20px; margin: 10px auto; width: 80%; max-width: 900px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); border-radius: 10px; }
+        .row { display: flex; justify-content: space-around; flex-wrap: wrap; margin: 10px 0; }
+        .box { background: white; width: 45%; padding: 10px; text-align: center; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); transition: transform 0.3s ease-in-out; border-radius: 8px; }
+        .box:hover { transform: scale(1.05); }
+        .box img { width: 100%; height: auto; border-radius: 5px; }
+        .box a { display: block; margin-top: 10px; text-decoration: none; color: #0073e6; font-weight: bold; cursor: pointer; }
+        .footer { background-color: #d9534f; color: CCFFFF; padding: 10px; margin-top: 20px; }
+        #detailPage { display: none; background: 00FF99; padding: 20px; margin: 20px auto; width: 80%; max-width: 800px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); text-align: left; border-radius: 10px; }
+        .detail-img { width: 100%; height: auto; border-radius: 10px; }
+        .back-link { display: block; margin-top: 20px; text-align: center; font-size: 18px; text-decoration: none; color: #0073e6; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div id="mainPage">
+        <header class="header">
+            <div class="banner">QUÂN ĐỘI NHÂN DÂN VIỆT NAM </div>
+            <div class="slogan">Trung với Đảng, Hiếu với Dân, Sẵn sàng chiến đấu hy sinh vì Tổ quốc</div>
+        </header>
+        <main class="content">
+            <div class="row">
+                <div class="box"> 
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.cCad2u8PB4j-UbbwjpoTTgHaEK&pid=Api&P=0&h=220" alt="Lịch sử quân đội"> 
+                    <p>Lịch sử và ngày thành lập quân đội</p>
+                    <a onclick="showDetail('https://tse1.mm.bing.net/th?id=OIP.C9rlpDK6ZkCMjBFXcf1CUgHaEK&pid=Api&P=0&h=220', 'Ngày 22/12/1944, Quân đội Nhân dân Việt Nam được thành lập với tên gọi Đội Việt Nam Tuyên truyền Giải phóng quân, do Đại tướng Võ Nguyên Giáp chỉ huy. Từ một đội quân nhỏ, quân đội ta đã phát triển mạnh mẽ, lập nhiều chiến công trong các cuộc kháng chiến bảo vệ Tổ quốc.')">Xem chi tiết</a>
+                </div>
+                <div class="box"> 
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.t_2BVRltH7P04eK-wdkteQHaE9&pid=Api&P=0&h=220" alt="Lực lượng quân đội"> 
+                    <p>Lực lượng quân đội nhân dân Việt Nam </p>
+                    <a onclick="showDetail('https://tse3.mm.bing.net/th?id=OIP.-9ZkPV6NBQ3do2LGD5alAAHaEc&pid=Api&P=0&h=220', ' Lực lượng Thường trực của Quân đội nhân dân có Bộ đội Chủ lực và Bộ đội Địa phương, cấp tổ chức của Quân đội nhân dân Việt Nam từ thấp đến cao là Tiểu đội, Trung đội, Đại đội, Tiểu sư đoàn, Trung đoàn, Lữ đoàn, Sư đoàn (trước đây gọi là Đại đoàn).')">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box"> 
+                    <img src="https://inkythuatso.com/uploads/thumbnails/800/2023/03/hinh-anh-bac-ho-doc-ban-tuyen-ngon-doc-lap-1-04-14-04-53.jpg" alt="Vai trò quân đội">
+                    <p>Vai trò của quân đội</p>
+                    <a onclick="showDetail('https://tse2.mm.bing.net/th?id=OIP.t1S2zeUaubDwaraiBG3s2AHaEK&pid=Api&P=0&h=220', 'Quân đội có vai trò quan trọng trong việc bảo vệ chủ quyền, toàn vẹn lãnh thổ và an ninh quốc gia, ngăn chặn các mối đe dọa từ bên ngoài, hỗ trợ duy trì trật tự xã hội, tham gia cứu hộ, cứu nạn trong thiên tai, thảm họa, đóng góp vào gìn giữ hòa bình quốc tế, đồng thời hỗ trợ phát triển kinh tế, xây dựng cơ sở hạ tầng, khoa học - công nghệ và nâng cao tiềm lực quốc phòng để đảm bảo sự ổn định và phát triển bền vững của đất nước.')">Xem chi tiết</a>
+                </div>
+                <div class="box"> 
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.PQG0ZzjGF2kDP2E-1omc9wHaFN&pid=Api&P=0&h=220" alt="Tổ chức quân đội"> 
+                    <p>Các tổ chức trong quân đội</p>
+                    <a onclick="showDetail('https://tse2.mm.bing.net/th?id=OIP.DVvnK8aFzRsrj53wR5fxGQHaEV&pid=Api&P=0&h=220', 'Tổ chức quần chúng trong Quân đội nhân dân Việt Nam gồm có: Đoàn Thanh niên Cộng sản Hồ Chí Minh; Công đoàn; Hội phụ nữ.Các tổ chức quần chúng chi tổ chức ở đơn vị cơ sở (riêng với các doanh nghiệp thì tổ chức theo doanh nghiệp), đặt dưới sự lãnh đạo của tổ chức đảng, sự chỉ đạo trực tiếp của chính ủy, chính trị viên (bí thư cấp ủy) và cơ quan chính trị cùng cấp, sự chỉ đạo, hướng dẫn của cơ quan chính trị cấp trên.Các tổ chức quần chúng trong Quân đội có nhiệm vụ thực hiện đầy đủ chức năng, nhiệm vụ theo điều lệ của đoàn thể mình và các nghị quyết, chỉ thị của ban chấp hành Trung ương đoàn thể đó; vận dụng sát với đặc điểm, tình hình, nhiệm vụ quân sự, quốc phòng và phù hợp với cơ chế Đảng lãnh đạo Quân đội.Đối với các tổ chức nghề nghiệp, căn cứ tình hình cụ thể, nơi nào có nhu cầu cần thiết, nếu được Tổng cục Chính trị cho phép thì lập chi hội ở cơ sở, đặt dưới sự lãnh đạo của đảng bộ, chi bộ cơ sở, sự chỉ đạo của cơ quan chính trị cùng cấp và sự hướng dẫn về hoạt động nghề nghiệp của ban chấp hành hội mà chi hội đó trực thuộc.')">Xem chi tiết</a>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            Bản quyền © 2025 - Quân Đội Nhân Dân Việt Nam
+           - Nguyễn Hữu Hoàn.12a3
+        </footer>
+    </div>
+    <div id="detailPage">
+        <h2 id="detailTitle"></h2>
+        <img id="detailImg" class="detail-img" src="" alt="Chi tiết">
+        <p id="detailText"></p>
+        <a class="back-link" onclick="goBack()">⬅ Quay lại</a>
+    </div>
+    <script>
+        function showDetail(image, text) {
+            document.getElementById("mainPage").style.display = "none";
+            document.getElementById("detailPage").style.display = "block";
+            document.getElementById("detailImg").src = image;
+            document.getElementById("detailText").innerText = text;
+        }
+        function goBack() {
+            document.getElementById("detailPage").style.display = "none";
+            document.getElementById("mainPage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
